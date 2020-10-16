@@ -4,6 +4,7 @@ import { Text, View, StyleSheet } from 'react-native';
 import Nav from './src/nav';
 import Generate from './src/generate';
 import ListItems from './src/listitems';
+import Inputs from './src/inputs';
 
 const App = () => {
   const [hello, setHello] = useState(true);
@@ -49,6 +50,7 @@ const App = () => {
         items={random}
         remove={(pos)=>onItemRemove(pos)}
       />
+      <Inputs/>
     </View>
   )
 }
