@@ -1,5 +1,5 @@
 import React,{ useState, useEffect } from 'react';
-import { Text, View, StyleSheet,ScrollView } from 'react-native';
+import { Text, View, StyleSheet,ScrollView,ActivityIndicator } from 'react-native';
 
 import Nav from './src/nav';
 import Generate from './src/generate';
@@ -57,7 +57,11 @@ const App = () => {
           items={random}
           remove={(pos)=>onItemRemove(pos)}
         />
-        <Inputs/>
+        {/* <Inputs/> */}
+        <ActivityIndicator animating={false}/>
+        <ActivityIndicator size="large"/>
+        <ActivityIndicator size="small" color="#000fff"/>
+
       </ScrollView>
     </View>
   )
